@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         <div className="mr-6 place-self-center lg:col-span-7 mx-auto ml-8">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold text-black leading-none tracking-tight md:text-5xl xl:text-6xl">
-            Welcome to MV's <br/> App and Web Dev Club!
+            Welcome to MV&#39;s <br/> App and Web Dev Club!
           </h1>
           <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl font__poppins">
             Join our 15+ year club at Monta Vista High School for iOS, Android, and Web development. Access workshops, projects, and mentorship to thrive in software development. Unleash your creativity with us!
