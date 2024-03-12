@@ -10,7 +10,7 @@ const About = () => {
             About Us
           </h2>
           <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl font__poppins">
-            Saving Animal Lives Through Adoption
+            Inspring the Next Programmers
           </p>
         </div>
         <div className="mt-20">
@@ -20,10 +20,7 @@ const About = () => {
                 Our Mission
               </dt>
               <dd className="mt-2 text-base text-gray-500">
-                To lighten the load of shelters and rescues by providing a
-                platform for them to connect with potential adopters and donors.
-                We hope to make the adoption process easier for both the adopter
-                and the shelter/rescue.
+                Our high school app and website development club aims to foster a collaborative environment where students can sharpen their coding and design skills. Through hands-on projects and activities, we seek to empower members with the expertise needed to excel in software development, nurturing a passion for innovation and problem-solving.
               </dd>
             </div>
             <div className="mx-auto w-52 border-2 hover:scale-110 duration-500 hover:rotate-2 md:hidden sm:block block shadow-sm">
@@ -40,9 +37,7 @@ const About = () => {
                 Our Vision
               </dt>
               <dd className="mt-2 text-base text-gray-500">
-                We hope to create a world in which pets are able to find happy
-                homes, and where shelters and rescues are able to find the
-                resources they need to continue rescuing and helping animals.
+                We envision our club as a catalyst for student-driven innovation, cultivating a community of tech enthusiasts poised to make a mark in the digital realm. By providing opportunities for real-world application and collaboration with industry experts, we aspire to equip our members with the tools and mindset to thrive in the ever-evolving landscape of technology.
               </dd>
             </div>
             <div className="mx-auto w-36 border-2 hover:scale-110 duration-500 hover:rotate-2 md:hidden sm:block block shadow-sm">
