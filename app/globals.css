@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button Custom Classes*/
+@layer components {
+ .button--primary {
+    @apply bg-green-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .button--secondary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .button--tertiary {
+    @apply bg-red-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .button--quaternary {
+    @apply bg-yellow-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .button--primary:hover {
+    @apply bg-green-600;
+  }
+
+  .button--secondary:hover {
+    @apply bg-blue-600;
+  }
+
+  .button--tertiary:hover {
+    @apply bg-red-600;
+  }
+
+  .button--quaternary:hover {
+    @apply bg-yellow-600;
+  }
+
+  .pet-details-text {
+    @apply mb-2;
+    @apply text-black;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0; 
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  scroll-behavior: smooth;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Setting Fonts*/
+#font__poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+#navbar__custom {
+  /*Box Shadow*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  margin-bottom: 3px;
+  border-bottom: none;
+}
+
+/* Navbar: Contact */
+#navbar__contact {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 450;
+}
+
+/* Navbar Elements */
+.navbar__elements {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5;
+  padding: 0 10px;
+  margin-top: 3px;
+}
+
+.navbar__elements:after {
+  content: '';
+  position: absolute;
+  background-color: #84eeab;
+  height: 5px;
+  width: 0;
+  left: 0;
+  bottom: -26px;
+}
+
+.navbar__elements:hover:after {
+  animation: growInAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes growInAnimation {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+   }
+}
+
+/* Hero: Right Arrow */
+.right-arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Like button */
+.custom-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  float: right;
+  margin-right: 20px;
+}
+
+.custom-checkbox-checkmark {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  transition: transform 400ms ease, fill 400ms ease;
+  transform-origin: center center;
+}
+
+.custom-checkbox-input:checked~.custom-checkbox-checkmark {
+  animation: custom-like-effect 800ms ease;
+  fill: #FF5353;
+  /* Change fill color to red */
+}
+
+.custom-checkbox:hover .custom-checkbox-checkmark {
+  transform: scale(1.1);
+}
+
+@keyframes custom-like-effect {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+ * Login Page Styling
+*/
+
+#login-left {
+  background-image: url('/images/login-background.jpg');
+  background-size: cover;
+}
